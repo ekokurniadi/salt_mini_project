@@ -1,5 +1,3 @@
-// ignore_for_file: require_trailing_commas
-
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -81,8 +79,11 @@ class _MyAppState extends State<MyApp> {
                       name: MOBILE,
                       scaleFactor: scale,
                     ),
-                    ResponsiveBreakpoint.autoScale(450,
-                        name: MOBILE, scaleFactor: scale),
+                    ResponsiveBreakpoint.autoScale(
+                      450,
+                      name: MOBILE,
+                      scaleFactor: scale,
+                    ),
                     const ResponsiveBreakpoint.autoScale(600),
                     const ResponsiveBreakpoint.autoScale(
                       800,
