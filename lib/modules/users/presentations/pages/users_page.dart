@@ -110,7 +110,7 @@ class UsersPage extends StatelessWidget {
           child: BlocConsumer<UsersBloc, UsersState>(
             listener: (context, state) {
               if (state.status == UsersBlocStatus.failures) {
-                LoadingDialog.show(message: state.message);
+                LoadingDialog.showError(message: state.message);
               }
             },
             builder: (context, state) {
